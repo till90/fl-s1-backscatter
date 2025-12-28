@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+API:
+- POST /api/search -> Sucht nach Sentinel-1-Szenen
+- POST /api/preview -> Erstellt eine Vorschau für eine ausgewählte Szene
+- GET /r/<job_id>/overlay.png -> Ruft das Overlay-Bild für einen bestimmten Job ab
+- GET /r/<job_id>/data.tif -> Ruft die Daten-GeoTIFF-Datei für einen bestimmten Job ab
+- GET /healthz -> Überprüft den Zustand des Dienstes
+"""
 
 """
 fl-s1-radar (STAC) – VV/VH + Differenz (t0/t-1) + "All-Weather"-Kapitel
